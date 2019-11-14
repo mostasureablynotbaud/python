@@ -1,12 +1,6 @@
 import string
 
 
-
-
-
-
-
-
 CHAR_SET = string.printable[:-5]
 SUB_CHARS = CHAR_SET[-3:]+CHAR_SET[:-3]
 
@@ -22,11 +16,7 @@ for c in string.printable[-5:]:
     DECRYPT_dict[c] = c
 
 
-TEST_msg = 'I have yet to see Monty Python. I heard they were funny.'
-INPUT_file_name = 'cryptopy_input.txt'
-OUTPUT_file_name = 'cryptopy_output.txt'
-
-
+#encrypt
 
 def encrypt_msg(plaintext, encrypt_dict):
     ciphertext = []
@@ -35,8 +25,7 @@ def encrypt_msg(plaintext, encrypt_dict):
         ciphertext.append(v)
     return ''.join(ciphertext)
 
-
-
+# decrypt
 
 def decrypt_msg(ciphertext, decrypt_dict):
     plaintext = []
@@ -45,16 +34,14 @@ def decrypt_msg(ciphertext, decrypt_dict):
         plaintext.append(v)
     return ''.join(plaintext)
 
-
-
-
+# input and output 
 
 message = input('Type your message:\n')
 ciphertext = encrypt_msg(message, ENCRYPT_dict)
 plaintext = decrypt_msg(message, DECRYPT_dict)
 print('The message encrypted')
 print(ciphertext)
-print
+print(  )
 print('The message decrypted')
 print(plaintext)
 
