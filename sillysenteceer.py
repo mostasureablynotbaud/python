@@ -1,7 +1,7 @@
 import random
 
 persons = ['Hugh', 'Janet', 'Clara', 'David', 'Plaicius Holdeir', 'Sam']
-verbs = ['ran', 'fought', 'read', 'worked', 'drove the', 'built']
+verbs = ['ran', 'fought', 'read', 'worked', 'drove', 'built']
 adjectives = ['meaningfully', 'fast',' hard',' loose', 'slipery', 'bad']
 nouns = ['book', 'monster', 'road', 'fish', 'ball', 'boat']
 
