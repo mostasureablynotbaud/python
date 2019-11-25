@@ -31,7 +31,7 @@ class Address_Entry(object):
         template = "Address_Entry(first_name'%s',"+\
                    "family_name'%s',"+\
                    "email_address'%s',"+\
-                   "dob'%s'"
+                   "dob'%s'" 
         return template%(self.first_name, self.family_name, self.email_address, self.dob)
         
 class Controller(object):
@@ -87,6 +87,7 @@ class Controller(object):
         if dob == 'q':
             print('Not adding')
             return
+
             entry = Address_Entry(first_name, family_name, email_address, dob)
             self.address_book.add_entry(entry)
             values = (first_name, family_name)
